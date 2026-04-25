@@ -1,0 +1,436 @@
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import RequiredB12HeadScripts from '../components/RequiredB12HeadScripts.astro';
+import RequiredB12FooterScripts from '../components/RequiredB12FooterScripts.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>FYNC Consulting - Finance & Commerce Consulting</title>
+    <meta name="description" content="FYNC Consulting is a consulting agency focused on finance and commerce, helping businesses navigate growth, strategy, and digital transformation." />
+    <RequiredB12HeadScripts />
+  </head>
+
+  <body>
+    <Header />
+
+    {/* Hero Section */}
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-secondary/5">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          {/* Service Highlights */}
+          <div class="flex flex-col sm:flex-row gap-3">
+            <div class="bg-primary text-primary-foreground px-4 py-2 rounded-full inline-block text-base font-semibold">
+              Fractional CFO Services
+            </div>
+            <div class="bg-primary text-primary-foreground px-4 py-2 rounded-full inline-block text-base font-semibold">
+              Cloud Optimization Services
+            </div>
+          </div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-foreground leading-tight">
+            Your Strategic Business Partner to Optimize Cash Flow, Maximize Profits and Accelerate Growth
+          </h1>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a
+              href="#contact"
+              class="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 transform hover:scale-105 text-center"
+            >
+              Book an online appointment
+            </a>
+            <a
+              href="#services"
+              class="inline-block px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-all duration-200 text-center"
+            >
+              Explore our services
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="https://cdn.b12.io/client_media/9bdMaeYQ/c9667b9e-1d0c-11f1-98ee-0242ac110002-image.png"
+            alt="Finance and cloud consulting illustration"
+            class="w-full max-w-md h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    {/* Services Section */}
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
+            Learn How FYNC Consulting Can Boost Your Profits & Growth
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          {/* Cloud Cost Optimization Services Card */}
+          <div class="bg-primary text-primary-foreground rounded-3xl p-8 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-bold font-heading mb-4">
+              Cloud Cost Optimization Services
+            </h3>
+            <p class="leading-relaxed text-sm">
+              Analyzes, optimizes, and right sizes the cloud infrastructure in real time to reduce costs by 50% or more using AI-driven Kubernetes platform.
+            </p>
+          </div>
+
+          {/* Strategic CFO Advisory Card */}
+          <div class="bg-primary text-primary-foreground rounded-3xl p-8 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-bold font-heading mb-4">
+              Strategic CFO Advisory
+            </h3>
+            <p class="leading-relaxed text-sm">
+              Strategic financial guidance and support to businesses, going beyond traditional accounting.
+            </p>
+          </div>
+
+          {/* Financial Planning & Analysis Card */}
+          <div class="bg-primary text-primary-foreground rounded-3xl p-8 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-bold font-heading mb-4">
+              Financial Planning & Analysis (FP&A)
+            </h3>
+            <p class="leading-relaxed text-sm">
+              Budgeting, forecasting, and analysing data to enable smarter financial decision-making.
+            </p>
+          </div>
+
+          {/* KPI Dashboards & Monthly Reporting Card */}
+          <div class="bg-primary text-primary-foreground rounded-3xl p-8 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-bold font-heading mb-4">
+              KPI Dashboards & Monthly Reporting
+            </h3>
+            <p class="leading-relaxed text-sm">
+              Real time and comprehensive insight into a company's financial health and performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Founder Section */}
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/30 to-accent/10">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading text-foreground mb-8">
+          About the Founder – Pranshu Bansal, CA
+        </h2>
+
+        <div class="space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
+          <p>
+            Pranshu is a multinational finance and transformation leader with more than 20 years of experience driving business turnarounds, operational excellence, and sustainable growth. Having operated across APAC and the Americas, he brings a unique global perspective to every engagement, helping businesses navigate complex financial landscapes with agility and precision.
+          </p>
+
+          <p>
+            Throughout his career at major organizations like Intertek Group and Ernst & Young, Pranshu has sat at the intersection of financial discipline and commercial strategy. He founded FYNC Consulting to provide growing enterprises with the elite financial infrastructure and strategic leadership typically reserved for global corporations.
+          </p>
+
+          <div class="space-y-3">
+            <p class="font-semibold text-foreground">Core Competencies:</p>
+            <ul class="space-y-2 ml-4">
+              <li>
+                <span class="font-semibold text-foreground">Strategic Leadership:</span> Proven track record of partnering with CEOs and Boards to re-engineer underperforming businesses and unlock shareholder value.
+              </li>
+              <li>
+                <span class="font-semibold text-foreground">Operational Excellence:</span> Expert in digital finance transformation, having delivered millions in annual savings through automation and process optimization.
+              </li>
+              <li>
+                <span class="font-semibold text-foreground">Capital & Liquidity:</span> Specialist in optimizing working capital and securing large-scale financing to fuel business expansion.
+              </li>
+              <li>
+                <span class="font-semibold text-foreground">Risk & Governance:</span> Deep experience in mitigating financial risks and strengthening compliance frameworks across high-stakes international markets.
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            Pranshu is a Chartered Accountant who believes that a modern finance function should be a growth engine, not just a back-office requirement. At FYNC Consulting, he applies this philosophy to help clients transform their financial operations into a long-term competitive advantage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Pricing & Services Section */}
+    <section id="pricing" class="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
+            FYNC Consulting: Strategic Pricing & Services
+          </h2>
+          <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Flexible service packages designed to meet your business needs at every stage of growth.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {/* Growth Package */}
+          <div class="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <h3 class="text-2xl font-bold font-heading text-foreground mb-2">
+              Growth Package
+            </h3>
+            <p class="text-muted-foreground font-medium mb-4">
+              Know your numbers. Grow with clarity.
+            </p>
+            <div class="mb-6">
+              <p class="text-3xl font-bold text-primary">S$1,000</p>
+              <p class="text-muted-foreground">/ month</p>
+            </div>
+
+            <div class="space-y-4 flex-grow">
+              <div>
+                <h4 class="font-semibold text-foreground mb-2">Core Financial Management:</h4>
+                <ul class="space-y-1 text-muted-foreground text-sm list-outside">
+                  <li class="pl-4">• Book-keeping: Full maintenance of your financial records.</li>
+                  <li class="pl-4">• GST Filing: Ensuring compliance with tax regulations.</li>
+                  <li class="pl-4">• AP/AR Tracking: Detailed monitoring of accounts payable and receivable.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-foreground mb-2">Reporting & Insights:</h4>
+                <ul class="space-y-1 text-muted-foreground text-sm list-outside">
+                  <li class="pl-4">• Monthly Management Reporting: Clear visibility into your monthly performance.</li>
+                  <li class="pl-4">• Quarterly Review Call: Dedicated time to discuss financial health and strategy.</li>
+                  <li class="pl-4">• Cash Flow Visibility: Real-time understanding of your liquidity.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Performance Package */}
+          <div class="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <h3 class="text-2xl font-bold font-heading text-foreground mb-2">
+              Performance Package
+            </h3>
+            <p class="text-muted-foreground font-medium mb-4">
+              Make better decisions, faster.
+            </p>
+            <div class="mb-6">
+              <p class="text-3xl font-bold text-primary">S$1,500 – S$2,000</p>
+              <p class="text-muted-foreground">/ month</p>
+            </div>
+
+            <div class="space-y-4 flex-grow">
+              <div>
+                <h4 class="font-semibold text-foreground mb-2">Includes everything in the Growth Package, plus:</h4>
+                <ul class="space-y-1 text-muted-foreground text-sm list-outside">
+                  <li class="pl-4">• Budgeting & Forecasting: Proactive planning for future fiscal periods.</li>
+                  <li class="pl-4">• KPI Dashboards: Visual data tracking for your most critical metrics.</li>
+                  <li class="pl-4">• Margin & Cost Analysis: Deep dives into profitability and expenditure.</li>
+                  <li class="pl-4">• Investor-Ready Reports: Professional documentation for external stakeholders.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* CFO/Strategic Package */}
+          <div class="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <h3 class="text-2xl font-bold font-heading text-foreground mb-2">
+              CFO / Strategic Package
+            </h3>
+            <p class="text-muted-foreground font-medium mb-4">
+              Your finance team, without hiring one.
+            </p>
+            <div class="mb-6">
+              <p class="text-3xl font-bold text-primary">S$3,000 – S$5,000</p>
+              <p class="text-muted-foreground">/ month</p>
+            </div>
+
+            <div class="space-y-4 flex-grow">
+              <div>
+                <h4 class="font-semibold text-foreground mb-2">Full-Scale Strategic Support:</h4>
+                <ul class="space-y-1 text-muted-foreground text-sm list-outside">
+                  <li class="pl-4">• Fractional CFO: Executive-level financial leadership and guidance.</li>
+                  <li class="pl-4">• Fundraising Support: Strategic assistance for capital raising efforts.</li>
+                  <li class="pl-4">• Financial Modelling: Complex projections and business case development.</li>
+                  <li class="pl-4">• Board/Investor Reporting: High-level presentation of financial data.</li>
+                  <li class="pl-4">• Scenario Planning: Modelling "what-if" situations to mitigate risk.</li>
+                  <li class="pl-4">• Cost Optimization: Comprehensive review of cloud and finance operations.</li>
+                  <li class="pl-4">• Process Automation: Implementation of tools to drive operational efficiency.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Partnerships Section */}
+    <section id="partnerships" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-secondary/10 to-background">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
+            Partnerships That Power This Company
+          </h2>
+          <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We partner with industry-leading platforms and providers to deliver exceptional financial and cloud solutions.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {/* XERO Partner */}
+          <div class="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+            <div class="mb-4 h-12 flex items-center justify-center">
+              <img
+                src="https://cdn.b12.io/client_media/9bdMaeYQ/f2324ce0-2a88-11f1-b165-0242ac110002-Blue_block_-_secondary.png"
+                alt="XERO"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <h3 class="text-xl font-bold font-heading text-foreground mb-3">
+              XERO
+            </h3>
+            <p class="text-muted-foreground leading-relaxed">
+              Xero is a cloud-based accounting software that simplifies financial management for growing businesses. With real-time insights, automated processes, and seamless integrations, Xero empowers companies to manage cash flow efficiently, maintain accurate records, and make informed financial decisions. Its intuitive platform makes accounting accessible and efficient for businesses of all sizes.
+            </p>
+          </div>
+
+          {/* CAST AI Partner */}
+          <div class="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+            <div class="mb-4 h-12 flex items-center justify-center">
+              <img
+                src="https://cdn.b12.io/client_media/9bdMaeYQ/819cd1e3-2a8e-11f1-84d9-0242ac110002-full-logo-black.png"
+                alt="CAST AI"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <h3 class="text-xl font-bold font-heading text-foreground mb-3">
+              CAST AI
+            </h3>
+            <p class="text-muted-foreground leading-relaxed">
+              CAST AI is an intelligent cloud optimization platform that leverages artificial intelligence to analyze and optimize cloud infrastructure spending. By automatically identifying waste, recommending right-sizing opportunities, and implementing cost-saving measures, CAST AI helps organizations dramatically reduce their cloud bills while maintaining performance and reliability. Its advanced automation and machine learning capabilities make it an essential partner for maximizing ROI on cloud investments.
+            </p>
+          </div>
+
+          {/* ZOHO Books Partner */}
+          <div class="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+            <div class="mb-4 h-12 flex items-center justify-center">
+              <img
+                src="https://cdn.b12.io/client_media/9bdMaeYQ/c792242c-2a8b-11f1-92f6-0242ac110002-zoho-logo-512_1.png"
+                alt="ZOHO Books"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <h3 class="text-xl font-bold font-heading text-foreground mb-3">
+              ZOHO Books
+            </h3>
+            <p class="text-muted-foreground leading-relaxed">
+              ZOHO Books is a comprehensive cloud-based accounting and bookkeeping platform designed to streamline financial operations for businesses of all sizes. With powerful features including invoicing, expense tracking, financial reporting, and multi-currency support, ZOHO Books enables businesses to manage their finances efficiently and make data-driven decisions. Its intelligent automation, seamless bank integrations, and collaborative tools make financial management simpler, faster, and more accurate than ever before.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Contact Section */}
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4 text-center">
+          Contact
+        </h2>
+        <p class="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+          Share a few details about your needs and we'll follow up with available times.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          {/* Left Column - Content */}
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-3xl md:text-4xl font-bold font-heading text-foreground mb-6">
+                We're Here to Help Your Business & Profits Grow
+              </h3>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <h4 class="text-lg font-bold font-heading text-foreground mb-2">
+                  Cloud Cost Optimization Services
+                </h4>
+                <p class="text-muted-foreground leading-relaxed">
+                  Get a deeper understanding of your current cloud spend and savings, and find out how much more you can save. Request a Free Savings Analysis Audit.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-bold font-heading text-foreground mb-2">
+                  Fractional CFO & Other Finance Services
+                </h4>
+                <p class="text-muted-foreground leading-relaxed">
+                  Nobody knows your business as well as you do, at FYNC Consulting we get behind the numbers to provide you time and financial insight to maximize your business' true potential! To understand how our functional financial advice and solutions can help, lets engage. Complete the form and we will connect!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Contact Form */}
+          <div>
+            <form data-form-id="6ddd0939-1078-4253-962e-82fbf9bfa054" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-foreground mb-2">
+                  Name <span class="text-accent">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-2 border border-border rounded-lg bg-card text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold text-foreground mb-2">
+                  Email <span class="text-accent">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-2 border border-border rounded-lg bg-card text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200"
+                  placeholder="your.email@company.com"
+                />
+              </div>
+
+              <div>
+                <label for="msg" class="block text-sm font-semibold text-foreground mb-2">
+                  Message <span class="text-accent">*</span>
+                </label>
+                <textarea
+                  id="msg"
+                  name="msg"
+                  required
+                  rows="5"
+                  class="w-full px-4 py-2 border border-border rounded-lg bg-card text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200 resize-none"
+                  placeholder="Tell us about your project and goals..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 transform hover:scale-105"
+              >
+                Send Message
+              </button>
+            </form>
+
+            <div id="b12-form-done-6ddd0939-1078-4253-962e-82fbf9bfa054" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+              Thank you for your message! We'll be in touch soon.
+            </div>
+
+            <div id="b12-form-error-6ddd0939-1078-4253-962e-82fbf9bfa054" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
+              There was an error sending your message. Please try again.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+    <RequiredB12FooterScripts />
+  </body>
+</html>
