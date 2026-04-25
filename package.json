@@ -1,0 +1,16 @@
+{
+  "name": "fync-consulting",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "FYNC Consulting - Finance & Commerce Consulting Website",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "latest",
+    "tailwindcss": "latest"
+  }
+}
